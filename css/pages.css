@@ -22,11 +22,13 @@ head, body{
   padding: 10px;
 }
 .image{
-  padding: 5px;
+  padding: 3px;
+  display:inline-flex;
+}
+.para-image{
   text-align: center;
 }
 .para{
-  display:inline-flex;
   justify-content: center;
 }
 .overlay{
