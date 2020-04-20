@@ -23,6 +23,7 @@ head, body{
 }
 .image{
   padding: 5px;
+  text-align: center;
 }
 .para{
   display:inline-flex;
