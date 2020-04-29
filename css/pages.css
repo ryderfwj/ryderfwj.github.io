@@ -21,11 +21,9 @@ head, body{
   margin-right: auto;
   padding: 10px;
 }
-.image{
-  padding: 3px;
-  display:inline-flex;
-}
 .para-image{
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
 }
 .para{
