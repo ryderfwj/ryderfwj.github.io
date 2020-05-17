@@ -4,10 +4,11 @@ head, body{
   font-weight: 400;
 }
 .content-header{
-  padding-bottom: 200px;
+  height: 300px;
 }
 .content-header-img{
   float: left;
+  padding-top: 25px;
 }
 .content-header-text{
  float: left;
