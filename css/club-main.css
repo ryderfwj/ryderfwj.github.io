@@ -1,0 +1,92 @@
+head, body{
+  background-color: #f2f2f2;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.dark-mode{
+  color: #ffffff;
+  background-color: #4f4f4f;
+}
+.dark-mode .container{
+  color: #ffffff;
+  background-color: #363636;
+}
+.dark-mode .user-name{
+  color: #000000;
+}
+.container {
+  width: 80%;
+  background-color: white;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.club-banner-container{
+  display: none;
+}
+.club-banner{
+  max-width: 100%;
+  min-width: 400px;
+  max-height: 100%;
+}
+.club-banner-title{
+  text-align: center;
+}
+.inner-table{
+  float: left;
+}
+table{
+  border-collapse: collapse;
+  text-align: center;
+}
+.single-table td{
+  border-collapse: collapse;
+  border: 1px solid;
+}
+table .single-td{
+  width: 33%;
+}
+.single-td table {
+  width: 100%;
+}
+.mainlist-table, .halloffame-table, .milkcarton-table{
+  min-width: 100%;
+}
+.mainlist-title, .halloffame-title, .milkcarton-title{
+  padding-top: 50px;
+  text-align: center;
+}
+.mainlist-table .user-name{
+  background-color: #96f4ff
+}
+.milkcarton-table .user-name{
+  background-color: #ff9696;
+}
+.halloffame-table .user-name{
+  background-color: #f5c367;
+}
+.center{
+  padding-top: 20px;
+  text-align: center;
+}
+.leftright-button:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+.slideshow-page, .leftright-button {
+  border: none;
+  display: inline-block;
+  padding: 4px 8px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.sel-grey{
+  background-color: #ccc;
+}
