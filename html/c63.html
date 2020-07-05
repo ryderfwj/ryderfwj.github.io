@@ -21,7 +21,19 @@
 </head>
 
 <body>
-  <div class="back"><a href="https://ryderfwj.github.io">Back to md</a></div>
+  <div id="audioDiv">
+    <div>Sound</div>
+    <label id="audioSwitch">
+      <input type="checkbox" checked>
+      <span id="audioSlider" class="round"></span>
+    </label>
+    <audio id="audioControl1" controls autoplay>
+      <source id="song1" src="../audio/Steins Gate OST - Gate of Steiner.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audioControl2" controls autoplay>
+      <source id="song2" src="../audio/Honkai Impact 3rd OST - Honkai Word Diva.mp3" type="audio/mpeg">
+    </audio>
+  </div>
   <div id="writeUp_wrapper">
     <header id="writeUp_header_container">
       <img id="writeUp_author_img" src="../images/Jean Bart Summer PFP.PNG">
@@ -187,6 +199,7 @@
             STEINS;GATE Special OVA
           </u>
         </strong>
+        <p id="warnSound">Also sound warning!!!</p>
         <p>You have been warned, click anywhere to continue</p>
       </div>
     </div>

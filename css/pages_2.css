@@ -55,6 +55,10 @@ body{
   justify-content: space-evenly;
   text-align: center;
 }
+#audioControl1, 
+#audioControl2{
+  display:none;
+}
 /*****--WARNING--*****/
 #warnOverlay{
   position: fixed;
@@ -81,6 +85,60 @@ body{
 .warnAnimeName{
   font-weight: 600;
   font-size: xx-large;
+}
+#warnSound{
+  color: #ffff00;
+}
+/*****--AUDIO--*****/
+#audioSwitch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+#audioSwitch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#audioSlider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+#audioSlider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + #audioSlider {
+  background-color:  #fcab55;
+}
+input:focus + #audioSlider {
+  box-shadow: 0 0 1px  #fcab55;
+}
+input:checked + #audioSlider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+#audioSlider.round {
+  border-radius: 34px;
+}
+#audioSlider.round:before {
+  border-radius: 50%;
 }
 /*****--FOOTER--*****/
 
