@@ -1,11 +1,14 @@
-#img1{
+#img1 {
   padding: 5px;
-  width: 100%
+  width: 100%;
 }
-#img2,#img3{
+#img2,
+#img3 {
   width: 95%;
   min-width: 200px;
 }
-#img4, #img5, #img6{
+#img4,
+#img5,
+#img6 {
   width: 95%;
 }

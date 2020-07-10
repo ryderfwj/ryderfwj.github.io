@@ -1,17 +1,18 @@
-head, body{
+head,
+body {
   background-color: #f2f2f2;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
-.dark-mode{
+.dark-mode {
   color: #ffffff;
   background-color: #4f4f4f;
 }
-.dark-mode .container{
+.dark-mode .container {
   color: #ffffff;
   background-color: #363636;
 }
-.dark-mode .user-name{
+.dark-mode .user-name {
   color: #000000;
 }
 .container {
@@ -22,51 +23,55 @@ head, body{
   margin-right: auto;
   padding: 10px;
 }
-.club-banner-container{
+.club-banner-container {
   display: none;
 }
-.club-banner{
+.club-banner {
   max-width: 100%;
   min-width: 400px;
   max-height: 100%;
 }
-.club-banner-title{
+.club-banner-title {
   text-align: center;
 }
-.inner-table{
+.inner-table {
   float: left;
 }
-table{
+table {
   border-collapse: collapse;
   text-align: center;
 }
-.single-table td{
+.single-table td {
   border-collapse: collapse;
   border: 1px solid;
 }
-table .single-td{
+table .single-td {
   width: 33%;
 }
 .single-td table {
   width: 100%;
 }
-.mainlist-table, .halloffame-table, .milkcarton-table{
+.mainlist-table,
+.halloffame-table,
+.milkcarton-table {
   min-width: 100%;
 }
-.mainlist-title, .halloffame-title, .milkcarton-title{
+.mainlist-title,
+.halloffame-title,
+.milkcarton-title {
   padding-top: 50px;
   text-align: center;
 }
-.mainlist-table .user-name{
-  background-color: #96f4ff
+.mainlist-table .user-name {
+  background-color: #96f4ff;
 }
-.milkcarton-table .user-name{
+.milkcarton-table .user-name {
   background-color: #ff9696;
 }
-.halloffame-table .user-name{
+.halloffame-table .user-name {
   background-color: #f5c367;
 }
-.center{
+.center {
   padding-top: 20px;
   text-align: center;
 }
@@ -74,7 +79,8 @@ table .single-td{
   color: #000 !important;
   background-color: #ccc !important;
 }
-.slideshow-page, .leftright-button {
+.slideshow-page,
+.leftright-button {
   border: none;
   display: inline-block;
   padding: 4px 8px;
@@ -87,6 +93,6 @@ table .single-td{
   cursor: pointer;
   white-space: nowrap;
 }
-.sel-grey{
+.sel-grey {
   background-color: #ccc;
 }

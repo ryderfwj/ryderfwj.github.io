@@ -8,66 +8,66 @@ function on() {
 
 function off() {
   document.getElementById("warnOverlay").style.display = "none";
-} 
+}
 
-function audioVolume(){
+function audioVolume() {
   audioTrack1.volume = 0.25;
   audioTrack2.volume = 0.25;
 }
 
-function pauseAudio(){
-  if(oddEven & 1){
+function pauseAudio() {
+  if (oddEven & 1) {
     audioTrack1.pause();
-  }else{
+  } else {
     audioTrack2.pause();
   }
 }
 
-function pauseBothAudio(){
-    audioTrack2.pause();
-    audioTrack1.pause();
+function pauseBothAudio() {
+  audioTrack2.pause();
+  audioTrack1.pause();
 }
 
-function resumeAudio(){
-  if(oddEven & 1){
+function resumeAudio() {
+  if (oddEven & 1) {
     audioTrack1.play();
-  }else{
+  } else {
     audioTrack2.play();
   }
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
   pauseBothAudio();
 
   audioVolume();
 
-  $("#warnOverlay").click(function(){
+  $("#warnOverlay").click(function () {
     off();
     resumeAudio();
   });
 
-  $("#audioSlider").click(function(){
-    if(oddEven & 1){
-      if(audioTrack1.paused){
+  $("#audioSlider").click(function () {
+    if (oddEven & 1) {
+      if (audioTrack1.paused) {
         resumeAudio();
-      }else{
+      } else {
         pauseAudio();
       }
-    }else{
-      if(audioTrack2.paused){
+    } else {
+      if (audioTrack2.paused) {
         resumeAudio();
-      }else{
+      } else {
         pauseAudio();
       }
     }
   });
 
-  audioTrack1.addEventListener('ended',function(){
+  audioTrack1.addEventListener('ended', function () {
     audioTrack2.play();
     oddEven++;
   });
 
-  audioTrack2.addEventListener('ended',function(){
+  audioTrack2.addEventListener('ended', function () {
     audioTrack1.play();
     oddEven++;
   });
