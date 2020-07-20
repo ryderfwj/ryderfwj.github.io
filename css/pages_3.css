@@ -1,0 +1,83 @@
+/*****GENERAL*****/
+body {
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+#main-wrapper{
+  display: grid;
+  grid-template-areas: 
+    "topleft-fr   topcenter-fr  topright-fr"
+    "leftbar-fr   content-fr    rightbar-fr"
+    "footer-fr    footer-fr     footer-fr";
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto auto 100px;
+  justify-items: center;
+}
+#top-left-container{
+  grid-area: topleft-fr;
+}
+#top-center-container{
+  grid-area: topcenter-fr;
+  display: flex;
+  width: 100%;
+}
+#top-right-container{
+  grid-area: topright-fr;
+}
+#left-container{
+  grid-area: leftbar-fr;
+}
+#content-container{
+  grid-area: content-fr;
+}
+#right-container{
+  grid-area: rightbar-fr;
+}
+#footer-container{
+  grid-area: footer-fr;
+}
+/*****TOP HEADER*****/
+#writeUp_author_img {
+  border-radius: 25px;
+  width: 150px;
+  height: 150px;
+  float: left;
+  padding: 5px;
+}
+#writeUp_number,
+#anime_title,
+#watch_date {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/*****WARNING*****/
+#warnOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  font-size: x-large;
+  background-color: black;
+  color: white;
+  opacity: 0.98;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#warnMessage {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+  padding-top: 200px;
+}
+.warnAnimeName {
+  font-weight: 600;
+  font-size: xx-large;
+}
+#warnSound {
+  color: #ffff00;
+}
